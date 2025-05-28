@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    <p>
+        <mark>
+            As tags de lista são usadas para exibir as informações na forma de listas
+        </mark>
+    </p>
+    <h1>Lista Não Ordenada</h1>
+    <h2> ul é pai de li</h2>
+    <p> Nao é ordernado o formato logo voce vai ver bolinhas <br>
+    ul -> define como lista <br>
+    li -> define o item da lista, ou melhor, lista o item.<br>
+    o li é necessário para escrever os itens da lista
+</p>
+    <div>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+
+        <p>
+            Existe outros tipos alem da bolinha, como: circle, square, none(nenhum), disc (padrão) que é o atual.
+        </p>
+    </div>
+    <div>
+        <ul type="circle">
+            <li>item novo</li>
+            <li>item velho</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1> Lista Ordenada</h1>
+        <p>
+           o ol é usado para exibir os itens da lista em formato ordenado 
+        </p>
+
+        ol é pai de li <br>
+        <ol>
+            <li>ordem</li>
+            <li>ordem</li>
+            <li>ordem</li>
+        </ol>
+
+        diferentes tipos de números estão disponíveis, numeral, romano, letras i, alfabeto maiusculo ou minusculo <br>
+        também podemos exibir os itens a partir de um determinado número/alfabético <br>
+
+        <ol type="I">
+            <li>ordem</li>
+            <li>ordem</li>
+            <li>ordem</li>
+        </ol>
+
+        <p>
+            lista em números romanos minúsculos começando pelo número 6, ou seja, "vi"
+        </p>
+
+    
+        <ol type="i" start="6">
+            <li>teste</li>
+            <li>teste</li>
+            <li>teste</li>
+        </ol>
+
+        número/alfabético: os valores podem ser exibidos em ordem inversa.
+        
+        <ol type="i" reversed>
+            <li>teste</li>
+            <li>teste</li>
+            <li>teste</li>
+        </ol>
+        O atributo reverso não alterará o conteúdo na ordem inversa, mas apenas os valores numéricos/alfabéticos <br>
+
+        você também pode criar uma lista aninhada usando as listas <br>
+
+        <h2> super test</h2>
+        <ul>
+            <li>Capitulo 1</li>
+            <ol type="A">
+                <li>Introdução ao html</li>
+                <li>Trabalhando com tags de lista</li>
+            </ol>
+            <li>Capitulo 2</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
