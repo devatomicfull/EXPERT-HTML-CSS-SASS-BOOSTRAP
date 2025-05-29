@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input e label</title>
+</head>
+
+<body>
+    <p>
+        A tag input/ no HTML é usada para coletar dados do usuário, como texto, números, e-mails, etc. <br>
+        Já a tag label/ é utilizada para criar rótulos que identificam e descrevem os campos de entrada, tornando a
+        interface mais clara e acessível.
+
+    <p>
+        label serve para acessibilidade e ao clicar em nome que nosso label ele irar da foco ao input do nome.
+        <br>
+        As labels podem ser associadas aos inputs de forma explícita (usando o atributo for) ou implícita (colocando o
+        input dentro do label).
+
+    </p>
+
+
+
+    <form id="meuFormulario">
+        <div>
+            <label for="textInput" form="meuFormulario">Texto</label>
+            <input id="textInput" type="text" name="texto" value="Exemplo" placeholder="Digite algo" required
+                maxlength="50" minlength="2" autocomplete="on" autofocus>
+
+            <br>
+
+            <label for="passwordInput">Senha</label>
+            <input id="passwordInput" type="password" name="senha" required>
+
+            <br>
+
+            <label for="emailInput">Email</label>
+            <input id="emailInput" type="email" name="email" placeholder="email@exemplo.com" required>
+
+            <br>
+
+            <label for="urlInput">URL</label>
+            <input id="urlInput" type="url" name="site" placeholder="https://exemplo.com">
+
+            <br>
+
+            <label for="telInput">Telefone</label>
+            <input id="telInput" type="tel" name="telefone" pattern="[0-9]{10,11}" placeholder="DDD + número">
+
+            <br>
+
+            <label for="numberInput">Número</label>
+            <input id="numberInput" type="number" name="numero" min="0" max="100" step="1" value="10">
+
+            <br>
+
+            <label for="rangeInput">Intervalo</label>
+            <input id="rangeInput" type="range" name="faixa" min="0" max="100" step="5" value="50">
+
+            <br>
+
+            <label for="dateInput">Data</label>
+            <input id="dateInput" type="date" name="data">
+
+            <br>
+
+            <label for="monthInput">Mês</label>
+            <input id="monthInput" type="month" name="mes">
+
+            <br>
+
+            <label for="weekInput">Semana</label>
+            <input id="weekInput" type="week" name="semana">
+
+            <br>
+
+            <label for="timeInput">Hora</label>
+            <input id="timeInput" type="time" name="hora">
+
+            <br>
+
+            <label for="datetimeInput">Data e hora (local)</label>
+            <input id="datetimeInput" type="datetime-local" name="datahora">
+
+            <br>
+
+            <label for="colorInput">Cor</label>
+            <input id="colorInput" type="color" name="cor" value="#ff0000">
+
+            <br>
+
+            <label for="checkboxInput">Aceita termos?</label>
+            <input id="checkboxInput" type="checkbox" name="termos" checked>
+            <br>
+            publicidade?
+            <input type="checkbox" name="publicidade" >
+
+            <br>
+
+            <label for="radio1">Gênero Masculino</label>
+            <input id="radio1" type="radio" name="genero" value="masculino">
+
+            <label for="radio2">Gênero Feminino</label>
+            <input id="radio2" type="radio" name="genero" value="feminino">
+
+            <br>
+
+            <label for="fileInput">Enviar Arquivo</label>
+            <input id="fileInput" type="file" name="arquivo" multiple accept=".jpg,.png,.pdf">
+
+            <br>
+
+            <label for="searchInput">Busca</label>
+            <input id="searchInput" type="search" name="busca" placeholder="Buscar...">
+
+            <br>
+
+            <label for="hiddenInput">Oculto</label>
+            <input id="hiddenInput" type="hidden" name="oculto" value="secreto">
+
+            <br>
+
+            <label for="imageInput">Botão imagem</label>
+            <input id="imageInput" type="image" src="https://via.placeholder.com/50" alt="Botão Imagem">
+
+            <br>
+
+            <label for="submitInput">Enviar</label>
+            <input id="submitInput" type="submit" value="Enviar Formulário">
+
+            <br>
+
+            <label for="resetInput">Resetar</label>
+            <input id="resetInput" type="reset" value="Limpar">
+
+            <br>
+
+            <label for="buttonInput">Botão</label>
+            <input id="buttonInput" type="button" value="Clique aqui">
+
+            <br>
+        </div>
+    </form>
+    </p>
+
+    <di>
+        <h2>tag input</h2>
+        <ul>
+            <li><strong>type:</strong> define o tipo de entrada que o campo aceitará. Exemplos: `text`, `password`,
+                `email`, `number`, `date`, etc.</li>
+            <li><strong>id:</strong> identifica exclusivamente o elemento na página. Usado com a tag `<label>` sem
+                    atributo `for`.</li>
+            <li><strong>name:</strong> nome do campo. Usado na submissão do formulário para enviar os dados ao servidor.
+            </li>
+            <li><strong>valor:</strong> valor padrão do campo. No envio do formulário, esse valor será enviado.</li>
+            <li><strong>placeholder:</strong> texto exibido dentro do campo como dica temporária (desaparece ao
+                digitar).</li>
+            <li><strong>required:</strong> torna o preenchimento obrigatório para o envio do formulário.</li>
+            <li><strong>readonly:</strong> o campo pode ser lido, mas não pode ser alterado pelo usuário.</li>
+            <li><strong>disabled:</strong> desativa o campo. Ele não pode ser editado nem enviado.</li>
+            <li><strong>maxlength:</strong> define o número máximo de caracteres permitidos no campo.</li>
+            <li><strong>minlength:</strong> define o número mínimo de caracteres obrigatórios.</li>
+            <li><strong>min:</strong> valor mínimo permitido (para `number`, `date`, `range`, etc.).</li>
+            <li><strong>max:</strong> valor máximo permitido (para `number`, `date`, `range`, etc.).</li>
+            <li><strong>passo:</strong> definir o intervalo de valores válidos. Exemplo: `step="5"` permite 0, 5, 10...
+            </li>
+            <li><strong>size:</strong> define a largura do campo de texto em número de caracteres visíveis (apenas
+                visual).</li>
+            <li><strong>pattern:</strong> expressão regular que define um padrão de texto aceito (validação).</li>
+            <li><strong>checked:</strong> usado em `checkbox` e `radio` para marcar o campo como selecionado por padrão.
+            </li>
+            <li><strong>multiple:</strong> permite vários arquivos seletivos, como arquivos (`file`) ou múltiplos
+                e-mails.</li>
+            <li><strong>autofocus:</strong> faz o campo receber foco automaticamente ao carregar a página.</li>
+            <li><strong>autocomplete:</strong> define se o navegador deve sugerir valores com base em preenchimentos
+                anteriores (`on` ou `off`).</li>
+            <li><strong>form:</strong> associa o campo de entrada a um `<form>` específico usando o `id` do formulário.
+            </li>
+            <li><strong>list:</strong> vincula o campo a um elemento `<datalist>` para fornecer sugestões de
+                    preenchimento.</li>
+            <li><strong>accept:</strong> define quais tipos de arquivos podem ser enviados (usado com `type="file"`).
+                Ex: `.jpg`, `image/*`, etc.</li>
+            <li><strong>src:</strong> usado apenas com `type="image"`. Defina o caminho da imagem que será usada como
+                botão de envio.</li>
+            <li><strong>alt:</strong> texto alternativo alterna se a imagem não for compartilhada, também importante
+                para acessibilidade.</li>
+        </ul>
+    </di>
+</body>
+
+</html>
