@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecao de opções</title>
+</head>
+
+<body>
+    <div>
+        <h3>Nível de Experiência</h3>
+        <label for="nivel">Escolha seu nível:</label>
+        <select id="nivel" name="experiencia" required size="1" autofocus form="formularioExemplo" multiple>
+            <option value="pro" selected>Pro</option>
+            <option value="init" label="Iniciante">iniciante</option>
+            <option value="perdedor" disabled>Perdedor</option>
+        </select>
+
+        <form id="formularioExemplo" action="/enviar" method="post">
+            <!-- outros campos -->
+        </form>
+    </div>
+    <div>
+        <h3>Tag select - Atributos</h3>
+        <ul>
+            <li><b>name</b>: Define o nome do campo enviado ao servidor com os dados selecionados.</li>
+            <li><b>required</b>: Torna obrigatória a seleção de pelo menos uma opção.</li>
+            <li><b>size</b>: Define o número de opções visíveis na lista sem rolagem (padrão é 1).</li>
+            <li><b>autofocus</b>: Faz o elemento receber foco automaticamente ao carregar a página.</li>
+            <li><b>form</b>: Associa o select a um formulário específico pelo `id` do formulário.</li>
+            <li><b>multiple</b>: Permite selecionar várias opções simultaneamente.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Tag option - Atributos</h3>
+        <ul>
+            <li><b>value</b>: Define o valor enviado ao servidor quando a opção é selecionada.</li>
+            <li><b>selected</b>: Faz com que a opção esteja pré-selecionada ao carregar a página.</li>
+            <li><b>disabled</b>: Impede que a opção seja selecionada.</li>
+            <li><b>label</b>: Define um texto alternativo para exibição na interface, diferente do texto interno ou do
+                valor.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Nível de Experiência</h3>
+        <label for="nivel">Escolha seu nível:</label>
+        <select id="nivel" name="experiencia" autofocus form="formularioExemplo">
+            <optgroup label="Níveis Iniciais">
+                <option value="init">Iniciante</option>
+                <option value="inter">Intermediário</option>
+            </optgroup>
+            <optgroup label="Níveis Avançados">
+                <option value="pro" selected>Pro</option>
+                <option value="expert">Expert</option>
+            </optgroup>
+            <optgroup label="Níveis Indisponíveis" disabled>
+                <option value="perdedor">Perdedor</option>
+            </optgroup>
+        </select>
+
+        <form id="formularioExemplo" action="/enviar" method="post">
+            <!-- outros campos -->
+        </form>
+    </div>
+    <div>
+        <h3>Tag optgroup - Atributos</h3>
+        <ul>
+            <li><b>label</b>: Define o texto descritivo do grupo, exibido como título na lista suspensa (obrigatório).
+            </li>
+            <li><b>disabled</b>: Desativa todas as opções dentro do grupo, tornando-as não selecionáveis.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
